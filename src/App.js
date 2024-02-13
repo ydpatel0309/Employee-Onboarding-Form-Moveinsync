@@ -35,14 +35,14 @@ function App() {
                     onClick={() => handlePageChange('Personal')}
                     className={selectedPage === 'Personal' ? 'active' : ''}
                   >
-                    Personal
+                    <span style={{ color: selectedPage === 'Personal' ? 'blue' : 'inherit' }}>Personal</span>
                   </div>
                   <div
                     id="Documents"
                     onClick={() => handlePageChange('Documents')}
                     className={selectedPage === 'Documents' ? 'active' : ''}
                   >
-                    Documents
+                    <span style={{ color: selectedPage === 'Documents' ? 'blue' : 'inherit' }}>Documents</span>
                   </div>
                 </div>
               </div>

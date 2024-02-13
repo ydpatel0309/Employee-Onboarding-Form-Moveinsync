@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Personal.css";
 
 const countries = ["INDIA","USA", "Canada", "UK", "Australia"];
-const teams = ["Team A", "Team B", "Team C"];
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
 
 const Personal= () => {
@@ -10,11 +9,11 @@ const Personal= () => {
     name: "",
     email: "",
     country: countries[0],
-    gender: "male",
+    gender: "",
     phone: "",
     notificationPreferences: [], 
-    office: "",
-    team: teams[0],
+    office: " MIS - Bengaluru Headquarters",
+    team: "",
   });
 
   const handleChange = (e) => {
@@ -94,23 +93,24 @@ const Personal= () => {
 
           <label className="gender_female">
             <input type="radio" name="gender" value="female" checked={formData.gender === "female"} onChange={handleChange}/>Female</label>
-          </div>
-
+            </div>
         <label>
           Phone Number:
           <input
             type="tel"
             name="phone"
+            placeholder="1234567890"
             value={formData.phone}
             onChange={handleChange}
           />
         </label>
             
-            <label>
+            <label className="Notifications">
               Notification Preferences:
               {NotificationPreferences.map((preference) => (
                 <div key={preference}>
-                  <label>
+
+                  <label className="Preferences">
                     <input
                       type="checkbox"
                       name="notificationPreferences"
@@ -123,6 +123,15 @@ const Personal= () => {
                 </div>
               ))}
             </label>
+            <div className="Office">
+            <lable>Office : <b>MIS - Bengaluru Headquarters</b></lable>
+            </div>
+
+            <div className="Team">
+            <lable>Team:<input type="text" name="team" placeholder="Font End - Engineering"value={formData.team} onChange={handleChange}></input></lable>
+            </div>
+
+
             <button type="submit" id="submit_button">Submit</button>
           </form>
         </div>
