@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./stylesheets/Personal.css";
+import Ride from "./images/ride.svg";
 
 const countries = ["INDIA","USA", "Canada", "UK", "Australia","Germany", "France", "Japan", "Brazil"];
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
@@ -154,6 +155,10 @@ const handleReset = () => {
             <button type="submit" id="submit_button">Save</button>
             <button type="reset" id="reset_button" onClick={handleReset}>Reset</button>
               </div>
+            
+            <div className="ride">
+                <img src={Ride} alt="ride"></img>
+            </div>
           </form>
         </div>
       </div>
