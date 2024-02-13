@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+::-webkit-scrollbar {
+    display: none;
+  }
 .form-outer {
     margin-top: 5vh;
     width: 100%;

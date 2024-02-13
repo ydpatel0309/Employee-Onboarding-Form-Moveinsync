@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+#moveinsync_logo {
+    width: 40px;
+    z-index: 1;
+}
+
+.App {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.App_inner {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile {
+    /* width: 100%; */
+    height: 100vh auto;
+    box-shadow: 0 0 1px 0.2px black; 
+    
+}
+
+.profile_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+#Save_button {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    /* background-color: lightgreen; */
+
+}
+
+#Reset_button {
+    height: 30px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+.form_outer {
+    box-sizing: border-box;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+
+}
+
+.choices_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+#Personal,#Documents
+{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+
+#Presonal::after,#Documents::after
+{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: blue;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+#Presonal:hover:after,#Documents:hover:after
+{
+    transform: scaleX(1);
+
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        width: 100px;
+        height: 70px;
+    }
+
+    .choices {
+        flex-direction: column;
+
+    }
+
+    .choices_inner {
+        flex-direction: column;
+
+    }
+}

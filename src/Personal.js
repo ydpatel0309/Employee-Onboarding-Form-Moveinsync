@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./stylesheets/Personal.css";
 
-const countries = ["INDIA","USA", "Canada", "UK", "Australia"];
+const countries = ["INDIA","USA", "Canada", "UK", "Australia","Germany", "France", "Japan", "Brazil"];
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
 
 const Personal= () => {
