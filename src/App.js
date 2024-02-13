@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
+import './stylesheets/App.css';
 import logo from "./images/logo.png";
-import PersonalPage from './Personal'; // Import your PersonalPage component
-import DocumentsPage from './Documents'; // Import your DocumentsPage component
+import PersonalPage from './Personal'; 
+import DocumentsPage from './Documents';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('Personal');

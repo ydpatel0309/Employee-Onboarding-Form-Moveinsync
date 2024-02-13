@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Personal.css";
+import "./stylesheets/Personal.css";
 
 const countries = ["INDIA","USA", "Canada", "UK", "Australia"];
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
@@ -48,7 +48,7 @@ const Personal= () => {
           <form onSubmit={handleSubmit}>
             <div className="lable_name">
           <label >
-          Name:
+          <b>Name:</b>
           <input
             type="text"
             name="name"
@@ -58,9 +58,9 @@ const Personal= () => {
           />
         </label>
         </div>
-
-        <label>
-          Email:
+        <div>
+        <label><b>Email:</b>
+          
           <input
             type="email"
             name="email"
@@ -68,11 +68,12 @@ const Personal= () => {
             onChange={handleChange}
             required
           />
-        </label>
+        </label></div>
+        <div>
 
-        <label>
-          Country:
-          <select
+        <label ><b>Country:</b>
+          
+          <select id="countries"
             name="country"
             value={formData.country}
             onChange={handleChange}
@@ -84,9 +85,10 @@ const Personal= () => {
             ))}
           </select>
         </label>
+        </div>
 
         <div className="gender">
-            <label className="gender_lable">Gender:</label>
+            <label className="gender_lable"><b>Gender:</b></label>
 
           <label className="gender_male">
             <input type="radio" name="gender" value="male" checked={formData.gender === "male"} onChange={handleChange}/>Male</label>
@@ -95,8 +97,9 @@ const Personal= () => {
             <input type="radio" name="gender" value="female" checked={formData.gender === "female"} onChange={handleChange}/>Female</label>
             </div>
         <label>
-          Phone Number:
-          <input
+        <b> Phone Number:</b>
+         
+          <input id="number"
             type="tel"
             name="phone"
             placeholder="1234567890"
@@ -105,8 +108,8 @@ const Personal= () => {
           />
         </label>
             
-            <label className="Notifications">
-              Notification Preferences:
+            <label className="Notifications"> <b> Notification Preferences:</b>
+             
               {NotificationPreferences.map((preference) => (
                 <div key={preference}>
 
@@ -124,13 +127,12 @@ const Personal= () => {
               ))}
             </label>
             <div className="Office">
-            <lable>Office : <b>MIS - Bengaluru Headquarters</b></lable>
+            <lable><b>Office: MIS - Bengaluru Headquarters</b></lable>
             </div>
 
             <div className="Team">
-            <lable>Team:<input type="text" name="team" placeholder="Font End - Engineering"value={formData.team} onChange={handleChange}></input></lable>
+            <lable><b>Team:</b><input type="text" name="team" placeholder="Font End - Engineering"value={formData.team} onChange={handleChange}></input></lable>
             </div>
-
 
             <button type="submit" id="submit_button">Submit</button>
           </form>

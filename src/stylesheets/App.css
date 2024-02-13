@@ -79,12 +79,11 @@
     justify-content: space-evenly;
     width: 30%;
 }
-#Presonal,#Documents
+#Personal,#Documents
 {
     width: max-content;
     position: relative;
     cursor: pointer;
-    /* margin: 100px auto; */
 }
 
 #Presonal::after,#Documents::after
