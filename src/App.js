@@ -3,6 +3,7 @@ import './stylesheets/App.css';
 import logo from "./images/logo.png";
 import PersonalPage from './Personal'; 
 import DocumentsPage from './Documents';
+import ProfilePic from "./images/profile.svg";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('Personal');
@@ -20,8 +21,13 @@ function App() {
           <div className="profile">
             <div className="profile_heading">
               <div className="heading">
+                <div className="profile_pic">
+                <img src={ProfilePic} alt="profile_picture"></img>
+                </div>
+                <div>
                 <h1>Employee Profile</h1>
                 Some info may be visible to others
+                </div>
               </div>
               
             </div>
@@ -33,14 +39,14 @@ function App() {
                     onClick={() => handlePageChange('Personal')}
                     className={selectedPage === 'Personal' ? 'active' : ''}
                   >
-                    <span style={{ color: selectedPage === 'Personal' ? 'blue' : 'inherit' }}>Personal</span>
+                    <span style={{ color: selectedPage === 'Personal' ? 'blue' : 'inherit' }}><h3>Personal</h3></span>
                   </div>
                   <div
                     id="Documents"
                     onClick={() => handlePageChange('Documents')}
                     className={selectedPage === 'Documents' ? 'active' : ''}
                   >
-                    <span style={{ color: selectedPage === 'Documents' ? 'blue' : 'inherit' }}>Documents</span>
+                    <span style={{ color: selectedPage === 'Documents' ? 'blue' : 'inherit' }}><h3>Documents</h3></span>
                   </div>
                 </div>
               </div>
