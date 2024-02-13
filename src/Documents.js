@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./stylesheets/Documents.css";
+import Upload from "./images/upload.svg";
 
 function Document() {
   const [licenseFile, setLicenseFile] = useState(null);
@@ -82,7 +83,11 @@ function Document() {
           <button type="reset" id="reset_button" onClick={handleReset}>
             Reset
           </button>
+          
         </div>
+        <div className="upload">
+                <img src={Upload} alt="upload documents"></img>
+            </div>
       </div>
     </>
   );
