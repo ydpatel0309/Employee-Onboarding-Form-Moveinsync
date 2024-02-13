@@ -9,6 +9,7 @@ function App() {
 
   const handlePageChange = (page) => {
     setSelectedPage(page);
+
   };
 
   return (
@@ -22,10 +23,7 @@ function App() {
                 <h1>Employee Profile</h1>
                 Some info may be visible to others
               </div>
-              <div className="buttons">
-                <button id="Save_button" type="submit">Save</button>
-                <button id="Reset_button" type="reset">Reset</button>
-              </div>
+              
             </div>
             <div className="form_outer">
               <div className="choices">

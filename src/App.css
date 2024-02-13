@@ -43,27 +43,15 @@
 
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 180px;
-}
+
 
 #Save_button {
     height: 30px;
     width: 80px;
     border-radius: 10px;
-    /* background-color: lightgreen; */
-
 }
 
-#Reset_button {
-    height: 30px;
-    width: 80px;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-}
+
 
 .form_outer {
     box-sizing: border-box;

@@ -4,7 +4,6 @@ import "./stylesheets/Documents.css";
 function Document() {
   const [licenseFile, setLicenseFile] = useState(null);
   const [licenseExpiryDate, setLicenseExpiryDate] = useState("");
-
   const [bgvFile, setBgvFile] = useState(null);
 
   const handleFileChange = (file, setFile, maxSizeInMB) => {
@@ -31,13 +30,20 @@ function Document() {
     console.log(jsonData);
   };
 
+  //handeling the reset button
+  const handleReset = () => {
+    setLicenseFile(null);
+    setLicenseExpiryDate("");
+    setBgvFile(null);
+  };
+
   return (
     <>
       <div className="Documents">
         <div className="Documents_inner">
-          <b>License Information</b>
+          <h3>License Information</h3>
           <form>
-            <label htmlFor="licenseFile"> License :</label>
+            <label htmlFor="licenseFile"><b>License :</b> </label>
             <input
               type="file"
               id="licenseFile"
@@ -47,7 +53,7 @@ function Document() {
               }
             />
             <br />
-            <label htmlFor="expiryDate">License Expiry Date:</label>
+            <label htmlFor="expiryDate"><b>License Expiry Date:</b></label>
             <input
               type="date"
               id="expiryDate"
@@ -57,9 +63,9 @@ function Document() {
             />
           </form>
 
-          <b>BGV Certificate Information</b>
+          <h3>BGV Certificate Information</h3>
           <form>
-            <label htmlFor="bgvFile">BGV Certificate:</label>
+            <label htmlFor="bgvFile"><b>BGV Certificate:</b></label>
             <input
               type="file"
               id="bgvFile"
@@ -70,8 +76,11 @@ function Document() {
             />
           </form>
 
-          <button type="button" id="submit_button"onClick={handleSubmit}>
-            Submit
+          <button type="button"id="submit_button" onClick={handleSubmit}>
+          Save
+          </button>
+          <button type="reset" id="reset_button" onClick={handleReset}>
+            Reset
           </button>
         </div>
       </div>

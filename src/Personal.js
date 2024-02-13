@@ -5,6 +5,8 @@ const countries = ["INDIA","USA", "Canada", "UK", "Australia","Germany", "France
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
 
 const Personal= () => {
+    const [selectedPage, setSelectedPage] = useState('Personal');
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,6 +42,19 @@ const Personal= () => {
     e.preventDefault();
     console.log(formData);
   };
+const handleReset = () => {
+  setFormData({
+    name: "",
+    email: "",
+    country: countries[0],
+    gender: "",
+    phone: "",
+    notificationPreferences: [],
+    office: " MIS - Bengaluru Headquarters",
+    team: "",
+  });
+};
+
 
   return (
     <>
@@ -134,7 +149,11 @@ const Personal= () => {
             <lable><b>Team:</b><input type="text" name="team" placeholder="Font End - Engineering"value={formData.team} onChange={handleChange}></input></lable>
             </div>
 
-            <button type="submit" id="submit_button">Submit</button>
+            
+            <div className="buttons">
+            <button type="submit" id="submit_button">Save</button>
+            <button type="reset" id="reset_button" onClick={handleReset}>Reset</button>
+              </div>
           </form>
         </div>
       </div>

@@ -29,7 +29,23 @@ input[type="date"],input[type="file"]{
     cursor: pointer;
     font-size: 16px;
 }
+#reset_button {
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
 
 #submit_button:hover {
     background-color: #0056b3;
+}
+#reset_button:hover
+{
+    background-color: green;
+
 }
