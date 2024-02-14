@@ -1,5 +1,10 @@
 # MoveinSync case study
 
+Demo link : https://www.loom.com/share/0f48a7ac569947e5bafcf4443f4dfc4b?sid=e8a54bc2-63f0-411c-a0c2-8c8af8297408
+
+Deployed on netlify : https://moveinsynccasestudy.netlify.app/
+
+
 ## Case study:
 * Employee Onboarding Form
 
@@ -57,5 +62,3 @@ console.
 5. A reset button will allow users to clear the form and start afresh if needed.
 
 ### My design
-
-* output of the form
