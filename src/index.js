@@ -8,9 +8,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        {/* //defalut path  */}
+        {/* Default path */}
         <Route path="/" element={<App />} />
-        {/* //if none of the page is matching then Page404 ERROR  */}
+        {/* If none of the pages match, then render NotFound */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
