@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    flex-wrap: wrap;
 }
 .Documents_inner
 {
@@ -13,14 +13,29 @@
 div {
     margin-bottom: 16px;
 }
-input[type="date"],input[type="file"]{
-    width: 50%;
+input[type="date"]{
+    width: 30%;
+    margin-left: 20px;
+    height: 50px;
+    align-content: center;
+    font-size: medium;
+
+}
+input[type="file"]{
+    width: 40%;
     margin-left: 20px;
     height: 50px;
     align-content: center;
     font-size: medium;
 }
-#submit_button {
+.buttonsD
+{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit_buttonD {
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -28,8 +43,9 @@ input[type="date"],input[type="file"]{
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: 50%;
 }
-#reset_button {
+#reset_buttonD {
     background-color: lightgreen;
     color: black;
     padding: 10px 20px;
@@ -38,14 +54,44 @@ input[type="date"],input[type="file"]{
     cursor: pointer;
     font-size: 16px;
     margin-left: 20px;
+    width: 50%;
+
 }
 
 
-#submit_button:hover {
+#submit_buttonD:hover {
     background-color: #0056b3;
 }
-#reset_button:hover
+#reset_buttonD:hover
 {
     background-color: green;
 
+}
+.upload img{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .Documents_inner
+{
+    width: 100%;
+}
+input[type="date"]{
+    width: 80%;
+    margin-left: 20px;
+    height: 50px;
+    align-content: center;
+    font-size: medium;
+    
+
+}
+input[type="file"]{
+    width: 80%;
+    margin-left: 20px;
+  
+}
+.Documents_inner
+{
+    padding: 10px;
+}
 }

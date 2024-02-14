@@ -76,13 +76,14 @@ function Document() {
               }
             />
           </form>
-
-          <button type="button"id="submit_button" onClick={handleSubmit}>
+              <div className="buttonsD">
+          <button type="button"id="submit_buttonD" onClick={handleSubmit}>
           Save
           </button>
-          <button type="reset" id="reset_button" onClick={handleReset}>
+          <button type="reset" id="reset_buttonD" onClick={handleReset}>
             Reset
           </button>
+          </div>
           
         </div>
         <div className="upload">
