@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 30%;
+    width: 20%;
 }
 #Personal,#Documents
 {
@@ -99,7 +99,7 @@
 @media (max-width: 600px) {
     .profile_heading {
        
-        padding: 10px;
+        padding: 30px;
     
     }
     .buttons {
