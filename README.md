@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+#MoveinSync case study
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Case study:
+* Employee Onboarding Form
 
-## Available Scripts
+The Employee Onboarding Form is a critical component of the onboarding process, facilitating the 
+collection of essential information from new employees. It serves as a comprehensive tool to gather 
+personal, professional, and administrative details necessary for integrating new hires into the 
+organization seamlessly.
 
-In the project directory, you can run:
+* Form Structure:
 
-### `npm start`
+1. Employee Information:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+a. Name: [Text Field] (Mandatory)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+b. Email: [Text Field] (Mandatory)
 
-### `npm test`
+c. Country: [Dropdown Menu] (Select Country)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+d. Gender: [Radio Buttons] (Mandatory)
 
-### `npm run build`
+i. Male
+ii. Female
+iii. Other
+e. Phone Number: [Text Field] (Mandatory)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+f. Notification Preferences:
+i. Email
+ii. SMS
+iii. App Notification
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+g. Office: [Non-Editable Field]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+h. Team: [Text Field]
 
-### `npm run eject`
+2. Documentation:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+a. Driver's License: [File Upload (PDF, Max 2MB)]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+b. License Expiry Date: [Date Picker]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+c. Background Verification Certificate: [File Upload (PNG, Max 2MB)]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Functionality:
 
-## Learn More
+1. Each field should have proper validations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. The form will validate all mandatory fields to ensure completeness and accuracy of data.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. File upload fields will restrict the upload size to 2MB and accept specific formats to maintain 
+consistency and ease of access.
 
-### Code Splitting
+4. Upon submission, the form will store the entered data securely and Print the JSON in the 
+console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. A reset button will allow users to clear the form and start afresh if needed.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
