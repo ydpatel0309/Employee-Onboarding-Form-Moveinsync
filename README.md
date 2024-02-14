@@ -1,6 +1,6 @@
-#MoveinSync case study
+# MoveinSync case study
 
-Case study:
+## Case study:
 * Employee Onboarding Form
 
 The Employee Onboarding Form is a critical component of the onboarding process, facilitating the 
