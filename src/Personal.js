@@ -196,7 +196,7 @@ const Personal = () => {
                 <input
                   type="text"
                   name="team"
-                  placeholder="Font End - Engineering"
+                  placeholder="Front End - Engineering"
                   value={formData.team}
                   onChange={handleChange}
                 />
