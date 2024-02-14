@@ -112,10 +112,10 @@ const handleReset = () => {
             <label className="gender_lable"><b>Gender:</b></label>
 
           <label className="gender_male">
-            <input type="radio" name="gender" value="male" checked={formData.gender === "male"} onChange={handleChange}/>Male</label>
+            <input type="radio" name="gender" value="male" checked={formData.gender === "male"} onChange={handleChange} required/>Male</label>
 
           <label className="gender_female">
-            <input type="radio" name="gender" value="female" checked={formData.gender === "female"} onChange={handleChange}/>Female</label>
+            <input type="radio" name="gender" value="female" checked={formData.gender === "female"} onChange={handleChange}required/>Female</label>
             </div>
         <label>
         <b> Phone Number:</b>
@@ -126,6 +126,7 @@ const handleReset = () => {
             placeholder="1234567890"
             value={formData.phone}
             onChange={handleChange}
+            required
           />
         </label>
             

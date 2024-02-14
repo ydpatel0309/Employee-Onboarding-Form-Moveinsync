@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import App from './App'; // Import your main App component
-import NotFound from './Page404'; // Import your custom 404 error component
+import App from './App';
+import NotFound from './Page404'; 
 
 ReactDOM.render(
   <React.StrictMode>
