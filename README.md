@@ -56,3 +56,16 @@ console.
 
 5. A reset button will allow users to clear the form and start afresh if needed.
 
+### My design
+
+![Personal](5a74a890a8abcabdc48fd1695c6590bece27fb04.jpg)
+
+![Personal](dbee237c66ce2b32c258c9e5d11d39afe328d37e.jpg)
+
+![Documents](a8a373e2a62d4353b5a119d7ec16bffa7c13d25e.jpg)
+
+![Page404](7fbede8a099e16c0fd594be3336360ace0f6c2e2.jpg)
+
+* output of the form
+
+![output](output-1.jpg)
