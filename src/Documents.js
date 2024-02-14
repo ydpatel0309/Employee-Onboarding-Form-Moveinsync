@@ -42,7 +42,7 @@ function Document() {
     <>
       <div className="Documents">
         <div className="Documents_inner">
-          <h3>License Information</h3>
+          <h3>License Information</h3><br></br>
           <form>
             <label htmlFor="licenseFile"><b>License :</b> </label>
             <input
@@ -64,7 +64,7 @@ function Document() {
             />
           </form>
 
-          <h3>BGV Certificate Information</h3>
+          <h3>BGV Certificate Information</h3><br></br>
           <form>
             <label htmlFor="bgvFile"><b>BGV Certificate:</b></label>
             <input
