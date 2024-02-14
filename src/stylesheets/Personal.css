@@ -2,38 +2,43 @@
     margin: 0;
     padding: 0;
 }
+
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
 .form-outer {
     margin-top: 5vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+
 }
+
 .buttons {
     display: flex;
     justify-content: space-between;
     width: 180px;
 }
+
 .form-inner {
     width: 50%;
 }
 
 .responsive-form {
     margin: auto;
-    padding: 20px;
     background-color: #f5f5f5;
-    border: 2px solid black;
+    border: 20px solid black;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#number
-{
+#number {
     width: 60%;
 }
+
 input,
 select {
     width: 70%;
@@ -57,17 +62,19 @@ input[type="radio"] {
     width: 20px;
     height: 20px;
 }
+
 input[type="checkbox"] {
     margin-left: 30px;
     margin-right: 10px;
     width: 20px;
     height: 20px;
 }
-#countries
-{
+
+#countries {
     width: 20%;
     margin-left: 10px;
 }
+
 #submit_button {
     background-color: #007bff;
     color: #fff;
@@ -77,6 +84,7 @@ input[type="checkbox"] {
     cursor: pointer;
     font-size: 16px;
 }
+
 #reset_button {
     background-color: lightgreen;
     color: black;
@@ -92,20 +100,20 @@ input[type="checkbox"] {
 #submit_button:hover {
     background-color: #0056b3;
 }
-#reset_button:hover
-{
+
+#reset_button:hover {
     background-color: green;
 
 }
 
-.gender{
+.gender {
     display: flex;
     align-items: center;
 }
 
 .gender_lable,
 .gender_male,
-.gender_female{
+.gender_female {
     margin-right: 10px;
     display: flex;
 }
@@ -117,7 +125,10 @@ input[type="checkbox"] {
 .Preferences {
     margin-right: 10px;
 }
-
+.ride img{
+    margin-top: 2vh;
+    width: 100%;
+}
 /* Media query */
 @media (max-width: 600px) {
 
@@ -127,17 +138,68 @@ input[type="checkbox"] {
         width: 100%;
     }
 
-    .Preferences,.Notification {
-        flex-direction: column;
+    .Preferences,
+    .Notification {
+        margin-right: 10px;
 
+    }
+    input[type="checkbox"] {
+        margin-left: 0px;
+        margin-right: 3px;
+        width: 20px;
+        height: 20px;
+        
+    }
+    .form-outer {
+        margin-top: 1vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;  
     }
     .form-inner {
         width: 80%;
     }
+
     .buttons {
-        flex-direction: column;
-        width: 100px;
-        height: 70px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
     }
+
+    #submit_button {
+       
+        width: 40%;
+      
+    }
+
+    #reset_button {
+        width: 40%;
+
+    }
+
+    #countries {
+        width: 50%;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gender_lable,
+    .gender_male,
+    .gender_female {
+        margin-right: 1px;
+    }
+
+    #number,
+    .Team {
+        width: 100%;
+    }
+
+    .ride img {
+        width: 100%;
+    }
+
 
 }
