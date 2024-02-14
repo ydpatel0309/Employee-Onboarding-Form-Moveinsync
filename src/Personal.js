@@ -124,7 +124,7 @@ const handleReset = () => {
           />
         </label>
             
-            <label className="Notifications"> <b> Notification Preferences:</b>
+            <label className="Notifications"> <b> Notify:</b>
              
               {NotificationPreferences.map((preference) => (
                 <div key={preference}>
