@@ -3,7 +3,7 @@ import "./stylesheets/Personal.css";
 import Ride from "./images/ride.svg";
 
 // List of countries and notification preferences
-const countries = ["INDIA", "USA", "Canada", "UK", "Australia", "Germany", "France", "Japan", "Brazil"];
+const countries = ["INDIA", "USA", "Canada", "UK", "Australia", "Germany", "France", "Japan", "Brazil","London", "France", "China", "Russia"]; 
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
 
 const Personal = () => {

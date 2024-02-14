@@ -99,7 +99,9 @@ function Document() {
         {/* Upload Image */}
         <div className="upload">
           <img src={Upload} alt="upload documents"></img>
+          
         </div>
+   
       </div>
     </>
   );
