@@ -19,7 +19,10 @@ function App() {
       <div className="App">
         <div className="App_inner">
           {/* moveinsync_logo */}
+          <div className='Title'>
           <img src={logo} alt="logo" id='moveinsync_logo' />
+            <h2>MoveinSync</h2>
+          </div>
           <div className="profile">
             <div className="profile_heading">
               <div className="heading">

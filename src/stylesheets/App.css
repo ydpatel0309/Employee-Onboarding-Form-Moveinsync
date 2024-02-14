@@ -20,7 +20,12 @@
     align-items: center;
     box-sizing: border-box;
 }
-
+.Title
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
 .App_inner {
     width: 100%;
     box-sizing: border-box;
