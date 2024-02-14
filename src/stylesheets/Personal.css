@@ -128,10 +128,13 @@ input[type="checkbox"] {
 .Preferences {
     margin-right: 10px;
 }
-.ride img{
-    margin-top: 2vh;
-    width: 100%;
+.ride
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
 /* Media query */
 @media (max-width: 600px) {
 

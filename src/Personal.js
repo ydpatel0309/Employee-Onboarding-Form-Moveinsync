@@ -161,10 +161,14 @@ const handleReset = () => {
             <button type="reset" id="reset_button" onClick={handleReset}>Reset</button>
               </div>
             
-            <div className="ride">
-                <img src={Ride} alt="ride"></img>
-            </div>
+            
           </form>
+
+            <div className="ride">
+            <img src={Ride} alt="ride"></img>
+
+            </div>
+        
         </div>
       </div>
     </>

@@ -57,6 +57,7 @@ function App() {
                   </div>
                 </div>
               </div>
+     
               <div className="page-content">
                 {/* condtional rendering of the pages */}
                 {selectedPage === 'Personal' && <PersonalPage />}
