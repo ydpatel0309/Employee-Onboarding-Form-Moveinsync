@@ -159,10 +159,7 @@ input[type="checkbox"] {
         display: flex;
         justify-content: center;  
     }
-    .form-inner {
-        width: 80%;
-    }
-
+  
     .buttons {
         width: 100%;
         flex-wrap: wrap;

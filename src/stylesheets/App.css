@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 
 }
 .heading
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 430px;
 }
 
 
@@ -106,92 +106,10 @@
         flex-direction: column;
 
     }
-
-}
-
-.App_inner {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.profile {
-    height: 100vh auto;
-    box-shadow: 0 0 1px 0.2px black;
-    
-}
-
-.profile_heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-
-}
-.heading
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 400px;
-}
-
-
-.form_outer {
-    box-sizing: border-box;
-}
-
-.choices {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 100%;
-}
-
-.choices_inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 30%;
-}
-#Personal,#Documents
-{
-    width: max-content;
-    position: relative;
-    cursor: pointer;
-}
-
-#Presonal::after,#Documents::after
-{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    height: 4px;
-    width: 100%;
-    background-color: blue;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
-    transform: scaleX(0);
-}
-
-#Personal:hover:after,#Documents:hover:after
-{
-    transform: scaleX(1);
-}
-
-@media (max-width: 600px) {
-    .buttons {
-        flex-direction: column;
-        width: 100px;
-        height: 70px;
+    .App {
+        padding: 10px;
+      
     }
 
-    .choices {
-        flex-direction: column;
 
-    }
-
-    .choices_inner {
-        flex-direction: column;
-
-    }
 }

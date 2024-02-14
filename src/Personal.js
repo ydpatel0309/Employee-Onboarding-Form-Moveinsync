@@ -6,8 +6,7 @@ const countries = ["INDIA","USA", "Canada", "UK", "Australia","Germany", "France
 const NotificationPreferences = ["Email", "SMS", "Push Notification"];
 
 const Personal= () => {
-    const [selectedPage, setSelectedPage] = useState('Personal');
-
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +18,7 @@ const Personal= () => {
     team: "",
   });
 
+  //handeling Changes
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -38,11 +38,14 @@ const Personal= () => {
       }));
     }
   };
+// handeling Submit
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
+
+  //handeling reset
 const handleReset = () => {
   setFormData({
     name: "",
@@ -68,6 +71,7 @@ const handleReset = () => {
           <input
             type="text"
             name="name"
+            placeholder="Firstname Lastname"
             value={formData.name}
             onChange={handleChange}
             required
@@ -80,6 +84,7 @@ const handleReset = () => {
           <input
             type="email"
             name="email"
+            placeholder="@gmail.com"
             value={formData.email}
             onChange={handleChange}
             required

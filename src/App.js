@@ -6,8 +6,9 @@ import DocumentsPage from './Documents';
 import ProfilePic from "./images/profile.svg";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState('Personal');
 
+  const [selectedPage, setSelectedPage] = useState('Personal');
+  // handeling the oage change //kepeing track of which page is opened
   const handlePageChange = (page) => {
     setSelectedPage(page);
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <div className="App">
         <div className="App_inner">
+          {/* moveinsync_logo */}
           <img src={logo} alt="logo" id='moveinsync_logo' />
           <div className="profile">
             <div className="profile_heading">
@@ -29,8 +31,9 @@ function App() {
                 Some info may be visible to others
                 </div>
               </div>
-              
             </div>
+              {/* <---------------------Lower Part--------------------> */}
+
             <div className="form_outer">
               <div className="choices">
                 <div className="choices_inner">
@@ -39,6 +42,7 @@ function App() {
                     onClick={() => handlePageChange('Personal')}
                     className={selectedPage === 'Personal' ? 'active' : ''}
                   >
+                    {/* //assignig a color to the active page */}
                     <span style={{ color: selectedPage === 'Personal' ? 'blue' : 'inherit' }}><h3>Personal</h3></span>
                   </div>
                   <div
@@ -51,6 +55,7 @@ function App() {
                 </div>
               </div>
               <div className="page-content">
+                {/* condtional rendering of the pages */}
                 {selectedPage === 'Personal' && <PersonalPage />}
                 {selectedPage === 'Documents' && <DocumentsPage />}
               </div>
