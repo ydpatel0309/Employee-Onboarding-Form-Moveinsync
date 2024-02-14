@@ -1,39 +1,19 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './stylesheets/index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
-
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-
-
-// reportWebVitals();
-
-
-import React from "react";
-import './stylesheets/index.css';
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; 
-import Page404 from "./Page404"; 
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import App from './App'; // Import your main App component
+import NotFound from './Page404'; // Import your custom 404 error component
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-
-      <Route path="/" element={<App />} />
-      <Route path="*" element={<Page404 />} />
-
-    </Routes>
-  </BrowserRouter>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <Router>
+      <Routes>
+        {/* //defalut path  */}
+        <Route path="/" element={<App />} />
+        {/* //if none of the page is matching then Page404 ERROR  */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
