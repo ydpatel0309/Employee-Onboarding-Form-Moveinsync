@@ -62,3 +62,17 @@ console.
 5. A reset button will allow users to clear the form and start afresh if needed.
 
 ### My design
+
+![5a74a890a8abcabdc48fd1695c6590bece27fb04](https://github.com/ydpatel0309/Employee-Onboarding-Form-Moveinsync/assets/91671051/78577b03-263c-4fa5-903b-77d0ef7b9d71)
+
+![dbee237c66ce2b32c258c9e5d11d39afe328d37e](https://github.com/ydpatel0309/Employee-Onboarding-Form-Moveinsync/assets/91671051/106923a9-8825-4a22-a569-cdc103f345f7)
+
+![a8a373e2a62d4353b5a119d7ec16bffa7c13d25e](https://github.com/ydpatel0309/Employee-Onboarding-Form-Moveinsync/assets/91671051/0f20904a-87b0-489f-bd84-0278df42adc2)
+
+* For invalid link
+![7fbede8a099e16c0fd594be3336360ace0f6c2e2](https://github.com/ydpatel0309/Employee-Onboarding-Form-Moveinsync/assets/91671051/f0ebec5d-1b96-446b-9e26-43133211f92d)
+
+
+
+* Output of the form
+![output](https://github.com/ydpatel0309/Employee-Onboarding-Form-Moveinsync/assets/91671051/be7a85f8-9df7-4104-9081-16e6cae93764)
